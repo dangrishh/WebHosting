@@ -16,8 +16,8 @@ app.use(express.json());
 
 app.use('/uploads', express.static('uploads')); // Serve uploaded files
 
-app.get("/", (req, res) => {
-    res.send("Welcome to the server");
+app.get("/helloWorld", (req, res) => {
+    res.send("Hello World");
 });
 
 // Import the authRoutes module
